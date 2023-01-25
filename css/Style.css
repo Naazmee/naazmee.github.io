@@ -1,0 +1,605 @@
+@charset "utf-8";
+/* CSS Document */
+
+* {
+	margin: 0;
+	padding:0;
+	font-family: 'Poppins', sans-serif;
+   
+    
+}
+
+.header{ 
+	min-height:120vh;
+	width: 100%;
+	background-image: url("../images/Backround.jpg");
+	background-position:center;
+	background-size:cover;
+	position: relative;
+
+}
+
+nav {
+	display: flex;
+	padding: 2% 6%;
+	justify-content: space-between;
+	align-items: center;
+}
+nav img {
+	width: 200px;	
+}
+
+nav-links {
+	flex: 1;
+	text-align-last: right;
+	
+}
+
+.nav-links ul li{
+	list-style: none;
+	display: inline-block;
+	padding: 4px 10px;
+	position: relative;
+	
+}
+.nav-links ul li a{
+	color: #0F005F;
+	text-decoration: none;
+	font-size: 13px;
+	font-weight: bolder;
+}
+.nav-links ul li::after{
+	content: '';
+	width: 0;
+	height: 2px;
+	background: #009688;
+	display: block;
+	margin: auto;
+	transition: 0.5s
+}
+.nav-links ul li:hover::after{
+	width: 100%;
+	
+}
+.carousel-item {
+	padding: 90px;
+	padding-top: 20px;
+	
+}
+
+.carousel-caption {
+	width: 70%;
+	position: absolute;
+	top: 30%;
+	
+}
+
+.carousel-caption h5 {
+	font-size: 40px;
+	color:white;
+	
+	
+}
+.carousel-caption p {
+	margin: 10px 0 40px;
+	font-size: 14px;
+	color:white;
+    font-family: 'Sofia Sans', sans-serif;
+	text-align: center;
+	font-weight: 600;
+
+}
+
+.carousel-control-next-icon {
+	position: relative;
+	
+}
+.carousel-control-prev-icon {
+	position: relative;
+}
+
+.hero-btn {
+	text-decoration:none;
+	color: white;
+	border: 1px solid #fff;
+	padding: 12px 34px;
+	font-size: 13px;
+	background: transparent;
+	position: relative;
+	cursor: pointer;
+}
+.hero-btn:hover{
+	
+	border: 1px solid #009688;
+	background: #009688;
+	transition: 1s;
+}
+.hero-btn {
+	border: 1px solid #009688;
+	background: transparent;
+	color: #009688;
+	
+	
+}
+.hero-btn:hover{
+	color: white;
+}
+/*---------Other------*/
+	  
+.other{
+	width: 80%;
+	margin: auto;
+	text-align: center;
+	
+}
+
+.row {
+	margin-top:0%;
+	display: flex;
+	justify-content: space-between;
+}
+.other-col{
+	flex-basis: 24.5%;
+	background-color: #5BCDE7;
+	margin-bottom: 5%;
+	padding: 20px 12px;
+	box-sizing: border-box;
+	transition: 0.5;
+	
+}
+h5 {
+	color: #0F005F;
+    font-weight: bold;
+    font-family: Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', 'serif';
+    font-size: 20px;
+}
+
+.other-col:hover {
+	box-shadow:  0 0 20px 0px;
+    color:  #0F005F;
+}
+
+/*---------hospitals------*/
+.hospitals .row {
+	margin-top:0%;
+}
+.hospitals{
+	width: 80%;
+	margin: auto;
+	text-align: center;
+	padding-top: 50px; 
+}
+.hospitals-col{
+	flex-basis: 32%;
+	border-radius: 10px;
+	margin-bottom: 30px;
+	position: relative;
+	overflow: hidden;
+   
+}
+
+.hospitals-col img{
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+.layer{
+	background: transparent;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	transition: 0.5s;
+}
+.layer:hover{
+	background: rgba(226,0,0,0.7);
+}
+.layer h10{
+	width: 100%;
+	font-weight: 500;
+	color: #fff;
+	font-size: 26px;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	position: absolute;
+	opacity: 0;
+    transition: 0.5s;
+
+}
+.layer:hover h10{
+	bottom: 49%;
+	opacity: 1;
+}
+/*--------------about us page-------*/
+
+.banner{ 
+    min-height:110vh;
+	width: 100%;
+	background-image: url("../images/Backround.jpg");
+	background-position:center;
+	background-size:cover;
+	position: relative;
+	padding-right: 150px;
+	
+
+
+}
+.sub-header{
+	height: 50vh;
+	width: 111%;
+	background-image: url("../images/21.PNG");
+	background-position: center;
+	background-size: cover;
+	text-align: center;
+	color: #fff;
+	
+}
+ h2{
+	
+	color:  #0F005F;
+	font-weight: bold;
+	font-family: Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', 'serif';
+	font-size: 30px;
+	padding-left:0;
+	
+}
+
+.about-us{
+	width: 80%;
+	margin: auto;
+	padding-top: 80px;
+
+}
+
+.about-col{
+	flex-basis: 48%;
+	padding: 30px 2px;
+	
+}
+.about-col img{
+	width: 120%;
+	height: 100%;
+	padding-left: 80px;
+	padding-bottom: 40px;
+	padding-top: 20px;
+ 
+}
+.about-col h1{
+	padding-top: -50px;
+	font-size: 25px;
+	font-weight: bold;
+
+}
+.about-col p{
+    padding: 15px 0 25px;
+    text-align: justify;
+	font-weight: 300;
+	font-family: 'Sofia Sans', sans-serif;
+	font-size: 20px;
+	
+}
+.red-btn {
+	border: 1px solid #009688;
+	background: transparent;
+	color: #009688;
+	
+	
+}
+.red-btn:hover{
+    color: white;
+    text-align: center;
+	
+}
+
+/*-------Treatments......*/
+
+
+.Treatments{
+	width: 80%;
+	margin: auto;
+	text-align: left;
+	padding-top: 100px;
+	
+}
+
+h4{
+	align-items: center;
+	font-weight: bold;
+	font-size: 18px;
+	color:  #0F005F;
+}
+.Treatments-col{
+	flex-basis: 31%;
+	border-radius: 10px;
+	margin-bottom: 5%;
+	text-align: left;
+	padding-left: 50px;
+	padding-bottom: -100px;
+}
+.Treatments-col img{
+	width: 120%;
+	height: 30%;
+	border-radius: 10px;
+	
+}
+.Treatments-col p{
+    padding: 0;
+    text-align: justify;
+	font-weight: 300;
+	font-family: 'Sofia Sans', sans-serif;
+	font-size: 20px;
+	
+	
+}
+.h9{
+	margin-top: 16px;
+	margin-bottom: 15px;
+	text-align: center;
+	font-weight: bold;
+	
+}
+.row {
+	margin-top: 5%;
+	display: flex;
+	justify-content: space-between;
+	
+}
+.Treatments-col{
+	flex-basis: 31%;
+	border-radius:10%;
+	margin-bottom:5%;	
+
+}
+h6{
+	font-family: 'Sofia Sans', sans-serif;
+	font-size: 18px;
+	font-weight: 600;
+}
+/*-------Medical Units......*/
+h1{
+    color: #0F005F;
+    font-weight: bold;
+    font-family: Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', 'serif';
+    font-size: 30px;
+}
+
+.MedicalUnits{
+	width: 80%;
+	margin: auto;
+	text-align: center;
+	padding-top: 100px;
+	padding-left: 50px;
+}
+h3{
+	font-size: 18px;
+	text-align: left;
+	font-weight: 600;
+	padding-bottom: 10px;
+	padding-left: 25px;
+	border-bottom: 2px solid #009688;
+	width: 100%;
+ 
+}
+		
+p{
+ 
+    font-size: 16px;
+    padding: 10px;
+	line-height: 22px;
+    text-align: left;
+    padding-left: 25px;
+    font-family: 'Sofia Sans', sans-serif;
+	font-weight: bold;
+}
+.row {
+   
+	display: flex;
+	justify-content:0;
+	padding-left: 20px;
+   
+	
+}
+.Medical-col{
+	flex-basis: 31%;
+	margin-bottom:5%;
+	padding: 5px 0;
+	border-radius:5%;
+	box-sizing: border-box;
+}
+
+
+
+/*-------Doctors......*/
+h1{
+    color: #0F005F;
+    font-weight: bold;
+    font-family: Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', 'serif';
+    font-size: 30px;
+	
+}
+.Doctors{
+	width: 80%;
+	margin: auto;
+	text-align: center;
+	padding-top: 50px;
+	padding-left: 50px;
+	
+	
+}
+h3{
+	font-size: 18px;
+	text-align: left;
+	font-weight: 600;
+	margine:10px 2;
+	padding-left: 25px;
+}
+
+p{
+    color: #777;
+    font-size: 16px;
+    padding: 10px;
+	line-height: 22px;
+    text-align: left;
+    padding-left: 25px;
+    font-family: 'Sofia Sans', sans-serif;
+	font-weight: 400;
+	
+}
+
+.row {
+	margin-top: 5%;
+	display: flex;
+	justify-content: space-between;
+	
+}
+.Doctors-col{
+	flex-basis: 30%;
+	background:#D2FEFE;
+	border-radius:5%;
+	margin-bottom:5%;
+	padding: 20px 12px;
+	box-sizing: border-box;
+	transition:0.5s; 
+
+}
+.Doctors-col:hover {
+	box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+}
+
+/*-------contact us page......*/
+
+h1{
+    color: #0F005F;
+    font-weight: bold;
+    font-family: Cambria, 'Hoefler Text', 'Liberation Serif', Times, 'Times New Roman', 'serif';
+    font-size: 30px;
+}
+.location {
+	width: 80%;
+	margin: auto;
+	padding: 80px 0;
+	padding-top: 30px;
+	padding-left: 25px;
+}
+
+.location iframe  {
+	width: 100%;
+}
+.contact-us{
+	width: 80%;
+	margin: auto;
+	
+}
+.contact-col{
+	flex-basis: 48%;
+	margin-bottom: 30px;
+	
+}
+.contact-col div{
+	display: flex;
+	align-items: center;
+	margin-bottom: 40px;
+}
+
+.contact-col div .fa{
+	font-size: 28px;
+	color: #009688;
+	margin: 20px;
+	margin-right: 20px;
+}
+.contact-col div p{
+	padding: 0;
+	ext-align: left;
+    padding-left: 25px;
+    font-family: 'Sofia Sans', sans-serif;
+	font-weight: 400;
+}
+.contact-col div h3{
+	font-size: 20px;
+	margin-bottom: 5px;
+	color: #555;
+	font-weight: 400;
+	padding-left: 5px;
+	
+}
+	
+.contact-col input, .contact-col textarea{
+	width: 100%;
+	padding: 15px;
+	margin-bottom: 17px;
+	outline: none;
+	border: 1px solid #ccc;
+}	
+
+
+/*---------Gallary------------*/
+
+.Gallary{
+	width: 80%;
+	margin: auto;
+	text-align: center;
+
+	
+	
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 10px 0 50px;
+
+}
+.box {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	
+	
+}
+
+
+.hospital{
+display: flex;
+flex-direction: column;
+width: 35.5%;
+height: 25%;
+
+
+}
+
+.hospital img{
+height: 100%;
+padding-bottom: 20px;
+border-radius: 5px;
+padding-left: 30px;
+padding-right: -5px;
+
+}
+
+.blue-btn {
+	margin: 40px 0 70px 700px;
+}
+.footer{
+	width: 100;
+	text-align: center;
+	padding: 30px;
+	
+}
+.icons .fa{
+	color:#009688;
+	margin: 0 0 0;
+	cursor: pointer;
+	padding: 18px 0 18px 18px;
+	align-icon: center;
+	
+}
+.fa-heart-o{
+	color:#f44336;
+}
+.footer p{
+	text-align: center;
+}
